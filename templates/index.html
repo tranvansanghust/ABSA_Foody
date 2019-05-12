@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- BOOTSTRAP -->
+
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" media="screen"
+          href="static/bootstrap/css/bootstrap.min.css">
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+
+    <link href="static/bootstrap/css/main.css" rel="stylesheet">
+
+
+    <!-- JS -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='page.js') }}"></script>
+
+    <title>Foody Statistic</title>
+</head>
+<body>
+<div class="container" style="margin-top: 20px">
+    <div>
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Mời chọn cửa hàng
+                    bạn
+                    cần đánh giá bình luận <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" id="list-name">
+                    <li class="list-group-item" id="1">cua hang 1</li>
+                    <li class="list-group-item" id="2">cua hang 2</li>
+
+                </ul>
+                <button class="btn btn-info" id="btn-process" name="btn-process">Xử lý</button>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <div>
+        <h3 class="text-center">Tổng quan</h3>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Tích cực</th>
+                <th>Trung tính</th>
+                <th>Tiêu cực</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td>Chất lượng</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>Vị trí</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>Phục vụ</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>Giá cả</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>Không gian</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <div>
+        <h3 class="text-center">Chi tiết</h3>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Bình luận</th>
+                <th>Chất lượng</th>
+                <th>Vị trí</th>
+                <th>Giá cả</th>
+                <th>Phục vụ</th>
+                <th>Không gian</th>
+            </tr>
+            </thead>
+            <tbody id="content-details-table">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+
+</html>
